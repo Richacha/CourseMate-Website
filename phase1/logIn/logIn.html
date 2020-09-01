@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CourseMate</title>
+    <link rel="stylesheet" type="text/css" href="logIn.css">
+</head>
+<body>
+    <div id="navBar">
+        <ul>
+            <li class="floatLeft homePageNav">
+            <a class="navBarButton" href="../homePage/homePage.html">Homepage</a>
+            </li>
+            <li class="floatLeft">
+            <a class="navBarButton" href="../forumNotLoggedIn/forumNotLoggedIn.html">Forum</a>
+            </li>
+            <li class="floatLeft">
+            <a class="navBarButton" href="../aboutUs/aboutUs.html">About Us</a>
+            </li>
+            <li class="floatLeft">
+            <a class="navBarButton"  href="../contactUs/contactUs.html">Contact Us</a>
+            </li>
+            <li class="floatRight">
+            <a class="navBarButton" id="logIn" href="../logIn/logIn.html">Log in</a>
+            <div class = "dropDown" id="dropDown"> <div id="logOff">Log Off</div> </div>
+            </li>
+            <li class="floatRight">
+            <a class="navBarButton" id="signUp" href="../signUp/signUp.html">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+    <div id = "content">
+        <div class="container">
+        <form id = "logInInfo">
+        <div class = "containerElement">
+        <p>Username: </br><input class="textInput" type="text" name="username" placeholder="Username"/></p>
+        </div>
+        <div class="containerElement">
+        <p>Password: </br><input class="textInput" type="password" name="password" placeholder="Password"/></p>
+        </div>
+        <div class="containerElement">
+        <button id="logInButton" class="button"/>Log in</button>
+        </div>
+        </form>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="logIn.js"></script>
+    <footer class="footer">
+    <p>Designed and created by Team14 :)</p>
+    </footer>
+</body>
+</html>

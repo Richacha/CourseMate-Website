@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/friendList.css">
+    <title>Friend List</title>
+  </head>
+
+
+  <body>
+
+    <div id="navBar">
+      <ul>
+        <li>
+          <a class="navBarButton" href="/forum/webpage">Forum</a>
+        </li>
+        <li>
+          <a class="navBarButton" href="/profile/webpage">Profile</a>
+        </li>
+        <li>
+          <a class="navBarButton" href="">Friends</a>
+        </li>
+        <li>
+          <a class="navBarButton" href="/studyGroup/webpage">Study Group</a>
+        </li>
+        <li class="floatRight">
+          <a class="navBarButton" href="/users/logoff">Log Off</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <!-- left container -->
+    <div id="leftContainer">
+      <div class="innerTopContainer">
+        <h4>Your Friends</h4>
+      </div>
+
+      <div id="friendList" class="visibleContainer">
+        <!-- <div class="listRow">
+          <img class="friendImage" src="uoft.jpg">
+          <a class="friendName" href="">Haolin Zhang</a>
+          <button type="button" class="btn btn-sm deleteButton">- Delete</button>
+        </div> -->
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- middle container -->
+    <div id="middleContainer">
+      <div class="innerTopContainer">
+        <h4>Chating Messages</h4>
+      </div>
+
+      <div id="chatingMessages" class="visibleContainer">
+        <!-- <div class="chatRow">
+          <img class="chatLeftImage" src="uoft.jpg">
+          <div class="leftOneMessageContainer"><br>
+            <div class="oneMessage">
+              Hello.
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="chatRow">
+          <img class="chatRightImage" src="updated.jpg">
+          <div class="rightOneMessageContainer"><br>
+            <div class="oneMessage">
+              Nice to meet you.
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+
+
+      <div id="sendingTextContainer" class="visibleContainer">
+        <textarea id="sendingTextArea" placeholder="Send a message"></textarea>
+        <button id="sendingTextButton" type="button" class="btn btn-sm">Send</button>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- right container -->
+    <div id="rightContainer">
+      <div class="innerTopContainer">
+        <input id="userSearch" type="text" name="userFullName" placeholder="Type user full name">
+        <button id="searchButton" type="button" class="btn btn-sm">Search</button>
+      </div>
+
+      <div id="strangerList" class="visibleContainer">
+        <!-- <div class="listRow">
+          <img class="friendImage" src="updated2.jpg">
+          <a class="friendName" href="">Bob</a>
+          <button type="button" class="btn btn-sm addButton">+ Add</button>
+        </div> -->
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="/js/friendList.js"></script>
+  </body>
+</html>

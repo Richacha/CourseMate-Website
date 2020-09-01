@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <title>Profile</title>
+  </head>
+
+
+  <body>
+
+    <div id="navBar">
+      <ul>
+        <li>
+          <a class="navBarButton" href="../forum/forum.html">Forum</a>
+        </li>
+        <li>
+          <a class="navBarButton" href="../profile/profile.html">Profile</a>
+        </li>
+        <li>
+          <a class="navBarButton" href="../friendList/friendList.html">Friends</a>
+        </li>
+        <li>
+          <a class="navBarButton" href="../studyGroup/studyGroup.html">Study Group</a>
+        </li>
+        <li class="floatRight">
+          <a class="navBarButton" href="../homePage/homePage.html">Log Off</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div id="profilePicContainer">
+      <div id="myProfile">My Profile</div>
+      <img id="profilePic" src="" alt="Your profile picture">
+    </div>
+
+
+
+    <div id="infoFormContainer">
+      <form id="infoForm">
+        <div class="formRow">
+          <label class="formLabel">First Name: </label>
+          <span id="firstName" class="spanText"></span>
+          <!-- <input class="formInput" type="text" placeholder="Type your first name"> -->
+        </div>
+        <div class="formRow">
+          <label class="formLabel">Last Name: </label>
+          <span id="lastName" class="spanText"></span>
+          <!-- <input class="formInput" type="text" placeholder="lalalala"> -->
+        </div>
+        <div class="formRow">
+          <label class="formLabel">Age: </label>
+          <span id="age" class="spanText"></span>
+          <!-- <input class="formInput" type="text" placeholder="lalalala"> -->
+        </div>
+        <div class="formRow">
+          <label class="formLabel">Gender: </label>
+          <span id="gender" class="spanText"></span>
+          <!-- <input class="formInput" type="text" placeholder="lalalala"> -->
+        </div>
+        <div class="formRow">
+          <label class="formLabel">University: </label>
+          <span id="university" class="spanText"></span>
+          <!-- <input class="formInput" type="text" placeholder="lalalala"> -->
+        </div>
+        <div class="formRow">
+          <label class="formLabel">Program: </label>
+          <span id="program" class="spanText"></span>
+          <!-- <input class="formInput" type="text" placeholder="lalalala"> -->
+        </div>
+
+        <div class="formRow">
+          <label class="formLabel">Year of Study: </label>
+          <span id="yearOfStudy" class="spanText"></span>
+          <!-- <input class="formInput" type="text" placeholder="lalalala"> -->
+        </div>
+        <div class="formRow">
+          <label class="formLabel">Phone Number: </label>
+          <span id="phoneNumber" class="spanText"></span>
+          <!-- <input class="formInput" type="text" placeholder="lalalala"> -->
+        </div>
+        <div class="formRow">
+          <label class="formLabel">Email: </label>
+          <span id="email" class="spanText"></span>
+          <!-- <input class="formInput" type="text" placeholder="lalalala"> -->
+        </div>
+
+      </form>
+    </div>
+
+
+    <div id="descriptionContainer">
+      <form id="descriptionForm">
+        <div class="formRow">
+          <label class="descriptionLabel">Study Group List: </label>
+          <table id="studyGroupList">
+            <tr>
+              <th>Study Group Name</th>
+              <th>Course Code</th>
+              <th>Number of Members</th>
+            </tr>
+            <!-- <tr>
+              <td>Happy309Friends</td>
+              <td>CSC309H1F</td>
+              <td>3</td>
+            </tr> -->
+          </table>
+        </div>
+        <div class="formRow">
+          <label class="descriptionLabel">Currently Enrolled Course List: </label>
+          <table id="courseList">
+            <tr>
+              <th>Course Code</th>
+              <th>Course Name</th>
+              <th>Section</th>
+              <th>Lecturer</th>
+            </tr>
+            <!-- <tr>
+              <td>CSC309H1F</td>
+              <td>Programming on the Web</td>
+              <td>LEC 0101</td>
+              <td>Mark Kazakevich</td>
+            </tr> -->
+          </table>
+        </div>
+        <div class="formRow">
+          <label class="descriptionLabel">Honour: </label>
+          <p id="honour" class="descriptionText"></p>
+          <!-- <textarea class="descriptionInput" type="text" placeholder="lalalala"></textarea> -->
+        </div>
+        <div class="formRow">
+          <label class="descriptionLabel">Hobby/Interest: </label>
+          <p id="hobby" class="descriptionText"></p>
+          <!-- <textarea class="descriptionInput" type="text" placeholder="lalalala"></textarea> -->
+        </div>
+      </form>
+    </div>
+
+
+    <button id="button" type="button" class="btn btn-primary btn-lg button">Update Information</button>
+
+
+
+    <script type="text/javascript" src="profile.js"></script>
+  </body>
+</html>

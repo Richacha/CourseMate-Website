@@ -1,0 +1,105 @@
+body {
+	background-image: url("/image/background.jpg");
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+	margin: 0;
+}
+
+#navBar {
+	width: 100%;
+	background-color: black;
+  font-family: Verdana;
+  font-weight: bold;
+}
+
+#navBar ul {
+	padding: 20px;
+	margin-top: 0;
+}
+
+#navBar ul li {
+	list-style: none;
+	display: inline;
+}
+
+.navBarButton {
+	text-decoration: none;
+	padding: 20px;
+  margin: 30px;
+	color: white;
+}
+
+.navBarButton:hover  {
+	color: orange;
+	text-decoration: none;
+}
+
+.floatRight {
+	float: right;
+}
+
+.searchElement{
+  width: 30%;
+  margin: 5%;
+  font-size: 20px;
+  font-family: Open Sans;
+}
+
+#content{
+  width: 80%;
+  background-color: #fff;
+  margin: 0% 5% 0% 5%;
+  padding: 3% 5% 3% 5%;
+}
+
+.searchElement .textInput{
+  font-size: 20px;
+}
+
+#searchButton{
+  font-size: 20px;
+  width: 10%;
+}
+
+#groupTable {
+  margin-top: 5%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+}
+
+.groupElement{
+  padding: 2% 2% 2% 2%;
+  list-style-type: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  margin: 0;
+  cursor: pointer;
+}
+
+#groupMenu{
+  padding: 2% 2% 2% 2%;
+  list-style-type: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  margin: 0;
+  background-color: #eee;
+}
+
+.memberNum{
+  left: 80%;
+  position: absolute;
+}
+
+.groupName{
+  margin-left: 2%;
+  width: 78%;
+}
+
+#newGroupButton{
+  font-size: 20px;
+  width: 10%;
+}

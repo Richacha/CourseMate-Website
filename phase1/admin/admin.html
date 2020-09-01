@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CourseMate</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+<body>
+     <div id="navBar">
+      <ul>
+        <li class="floatRight">
+          <a class="navBarButton" href="../homePage/homePage.html">Log Off</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div id = "content">
+    <form id = "searchG">
+    <span class = "searchElement">
+    CourseID: <input class="textInput" type="text" name="courseNumber" placeholder="CourseID" id="courseNum"/>
+    </span>
+    <span class="searchElement">
+    GroupName: <input class="textInput" type="text" name="groupName" placeholder="GroupName" id="groupName"/>
+    </span>
+    <button id="searchGButton" class="button">Search</button>
+    </form> 
+    <br>
+    <br>
+    <form id = "searchU">
+    <span class = "searchElement">
+    UserID: <input class="textInput" type="text" name="userID" placeholder="UserID" id="userID"/>
+    </span>
+    <span class="searchElement">
+    UserName: <input class="textInput" type="text" name="username" placeholder="UserName" id="username"/>
+    </span>
+    <button id="searchUButton" class="button">Search</button>
+    </form> 
+    <br>
+    <br>
+    <form id = "searchP">
+    <span class = "searchElement">
+    PostID: <input class="textInput" type="text" name="identifier" placeholder="PostID" id="identifier"/>
+    </span>
+    <span class="searchElement">
+    PostTitle: <input class="textInput" type="text" name="postTitle" placeholder="PostTitle" id="postTitle"/>
+    </span>
+    <button id="searchPButton" class="button">Search</button>
+    </form> 
+
+    
+    <div id = "groupTable">
+        <div id="groupMenu"></div>
+    </div>
+
+    <div id = "userTable">
+        <div id="userMenu"></div>
+    </div>
+
+    <div id = "postTable">
+        <div id="postMenu"></div>
+    </div>
+    
+    </div>
+
+</body>
+
+<script type="text/javascript" src="admin.js"></script>
+</html>

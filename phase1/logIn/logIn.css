@@ -1,0 +1,122 @@
+body {
+  background-color: #64C5EF;
+  margin: 0;
+  height: 100%;
+}
+
+.footer {
+  background-color: grey;
+  color: white;
+  position: fixed;
+  text-align: center;
+  bottom:0%;
+  left:0%;
+  width: 100%;
+  height:auto;
+}
+
+#navBar {
+  width: 100%;
+  background-color: black;
+  font-family: Verdana;
+  font-weight: bold;
+  height: 10%;
+}
+
+#navBar ul {
+  position: relative;
+  margin-left: 0%;
+  padding: 25px;
+  margin-top: 0px;
+}
+
+#navBar ul li {
+  list-style: none;
+  display: inline;
+}
+
+.navBarButton {
+  text-decoration: none;
+  padding: 20px;
+  margin: 30px;
+  color: white;
+}
+
+.navBarButton:hover  {
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.floatLeft  {
+  float: left;
+}
+
+.floatRight  {
+  float: right;
+}
+
+
+.container {
+  position: absolute;
+  padding: 20px;
+  width: 20%;
+  height: 50%;
+  margin-top: 10%;
+  margin-left: 50%;
+  transform: translate(-50%,0);
+  background-color: white;
+  border-radius: 30px;
+}
+
+.containerElement {
+  font-family: Open Sans;
+  width: 100%;
+  color: black;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.button {
+  border-color: green;
+  background-color: green;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 30px;
+  margin-left: 49%;
+  transform: translate(-50%,0);
+  width: 90%;
+  height: 60px;
+  border-radius: 35px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.textInput{
+    padding: 6px 10px;
+    margin: 4px 0;
+    width: 90%;
+    height: 20%;
+    font-size: 20px;
+}
+
+
+.dropDown{
+  /* hide the menu */
+  display: none; 
+}
+
+.dropDownShown{
+  position: relative;
+  color: white;
+  padding: 10px 20px 10px 10px;
+  margin: 0px 30px 0px 0px;
+  background-color: black;
+  cursor: pointer;
+  width: 70px;
+  /* hide the menu */
+}
+
+.dropDownShown:hover{
+  color: orange;
+}

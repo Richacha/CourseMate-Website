@@ -1,0 +1,219 @@
+body {
+  background-color: #64C5EF;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#navBar {
+  width: 100%;
+  background-color: black;
+  font-family: Verdana;
+  font-weight: bold;
+  height: 15%;
+}
+
+#navBar ul {
+  position: relative;
+  margin-left: 0%;
+  padding: 25px;
+  margin-top: 0px;
+}
+
+#navBar ul li {
+  list-style: none;
+  display: inline;
+}
+
+.navBarButton {
+  text-decoration: none;
+  padding: 20px;
+  margin: 30px;
+  color: white;
+}
+
+.navBarButton:hover  {
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.floatLeft  {
+  float: left;
+}
+
+.floatRight  {
+  float: right;
+}
+
+.dropDown{
+  /* hide the menu */
+  display: none; 
+}
+
+.dropDownShown{
+  position: relative;
+  color: white;
+  padding: 10px 20px 10px 10px;
+  margin: 0px 30px 0px 0px;
+  background-color: black;
+  cursor: pointer;
+  width: 70px;
+}
+
+.dropDownShown:hover{
+  color: orange;
+}
+
+
+.searchElement{
+  width: 30%;
+  margin: 5%;
+  font-size: 20px;
+  font-family: Open Sans;
+}
+
+#content{
+  width: 85%;
+  height: 100%;
+  background-color: #fff;
+  margin-left: 5.5%;
+  padding: 3% 2% 3% 2%;
+}
+
+.searchElement .textInput{
+  font-size: 20px;
+}
+
+#searchGButton{
+  font-size: 20px;
+  width: 10%;
+  float: right;
+  margin-right: 10%;
+}
+
+#searchUButton{
+  font-size: 20px;
+  width: 10%;
+  float: right;
+  margin-right: 10%;
+}
+
+#searchPButton{
+  font-size: 20px;
+  width: 10%;
+  float: right;
+  margin-right: 10%;
+}
+
+#groupTable {
+  float: left;
+  margin-top: 5%;
+  height: 800px;
+  width: 36%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  overflow: scroll;
+}
+
+.groupElement{
+  padding: 2% 2% 2% 2%;
+  list-style-type: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  margin: 0;
+  cursor: pointer;
+}
+
+#groupMenu{
+  padding: 2% 2% 2% 2%;
+  list-style-type: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  margin: 0;
+  background-color: #eee;
+}
+
+.memberNum{
+  margin-left: 20%;
+}
+
+.groupName{
+  margin-left: 2%;
+  width: 78%;
+}
+
+#userTable {
+  float: left;
+  margin-top: 5%;
+  height: 800px;
+  width: 23%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  overflow: scroll;
+}
+
+#userMenu{
+  padding: 2% 2% 2% 2%;
+  list-style-type: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  margin: 0;
+  background-color: #eee;
+}
+
+.userElement{
+  padding: 2% 2% 2% 2%;
+  list-style-type: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  margin: 0;
+  cursor: pointer;
+}
+
+#postTable {
+  margin-top: 5%;
+  height: 800px;
+  width: 40%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  overflow: scroll;
+}
+
+#postMenu{
+  padding: 2% 2% 2% 2%;
+  list-style-type: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  margin: 0;
+  background-color: #eee;
+}
+
+.postElement{
+  padding: 2% 2% 2% 2%;
+  list-style-type: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eee;
+  margin: 0;
+  cursor: pointer;
+}
+
+.removeGroup{
+  float: right;
+}
+
+.removePost{
+  float: right;
+}
+
+.removeUser{
+  float: right;
+}

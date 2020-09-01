@@ -1,0 +1,318 @@
+# team14 phase2.txt
+
+Link of our web app:    
+
+https://pacific-gorge-83730.herokuapp.com/
+
+
+
+
+================================================
+User Log In credential:
+Here are the users we have created as the mock data:  You are welcomed to sign up your own account  (username has to be unique in order to successfully sign up)
+username: Frank      password: 123
+username: bob      password: 123
+username: richard      password: 123
+username: sam      password: 123
+username: lau       password: 123
+username: mary      password: 123
+
+
+------------------------------------------------
+
+
+Admin Log In credential:
+username:admin
+password:admin
+================================================
+
+
+
+
+When you are not logged in:
+
+
+You are allowed to visit following page: homePage, forum (but you are not allowed to post or reply), aboutUs and contactUs.
+
+
+You may also go to signUp and logIn page.
+
+
+
+
+
+
+
+
+================================================
+
+
+User Instruction:
+
+
+Homepage:
+This is the first page the user will see when entering our websites. On top of our homePage, you can see entries for several other pages of our website. The user can click on Homepage to enter the Homepage, which is this page. The user can click on Forum on top of the page, or click "Enter the forum" orange button to enter forum. The user can click on "About Us" to obtain more information about this website. The user can click on "Contact Us" to obtain information about the team member, and how they can contact each of us. User can click on "Sign up" to sign up for an account, or "Log in" to log into the website.
+
+
+forumNotLoggedIn(the forum page display without log in):
+User can freely browse forum without logging in. To do so, the user just click on forum on top of the home page, or click enter the forum on the first page to enter. You can browse any post listed on the left, or search for any post, but you cannot reply to any of the post. When you are in this page, the "New Post" button will automatically take user to the Log In page, and the top bar of this page is the same as other users.
+
+
+Sign up:
+After clicking sign up on top bar, the user is taken to the sign up page, where the user can enter the desired username and password, after clicking the sign up button, a page will be displayed for users to choose their profile picture. Clicking on any of the pictures will take you to the profile page.
+
+
+Log in:
+After clicking log in on top bar, the user is taken to the log in page, where he can enter the username and password that he previously used to sign up. The user will be taken to profile page after clicking the log in button if the credential is correct. If not, text about user’s credential is incorrect will be displayed and the user will have to enter the correct credential. 
+
+
+profile:
+Inside the profile page, the user can see his personal info, including his courses, honour, hobbies. The user can update his information by clicking the "Update Information" button at the very end of the page, and by doing so, they can freely edit the fields described above,
+and click confirm to save the changes. On the top bar, you have Forum, profile, friends, and study group button, which you can click on any of them to go to that page.
+
+
+
+
+forum(the forum page display with user logged in):
+User can now post new posts, and reply in the posts of other users. Besides these two functions, the function of the forum is the same as alternate version of the forum(The forum page not logged in). Top bar is also changed. User will have access to profile page, friends list page and study group list page. Users are not allowed to post with an empty title, or reply with empty content.
+
+
+
+
+study group:
+By clicking the “study group” on top of the page in the navigation bar after log in, you will be taken to a page that contains all the existing study groups. You can search for the study groups by course code, or name. The search function on this page is case sensitive. To obtain all groups after search, you only need to leave all the fields in the search empty and click search again. You can also create your own group by using the input to type in the name, and the course number of the group. After clicking on the group name, the user will be taken to the groupPage.                                   
+
+
+groupPage:
+You can enter the groupPage by clicking on the groups displayed in the study group list inside your profile page. Or you can click on any of the groups in the studyGroup page. In the groupPage, you can click on the names of the members to go to their profile page, which is called userinfoDisplay. You can click on join group to join the group. If you are in the group, you can leave the group by clicking leave group. After joining the group, you can click on Announcement to display the announcements broadcasted by each group member. You can click on the “+new” button on the announcement page to broadcast new announcements, please do not broadcast empty announcements. You can also enter group chat and chat with other group members.
+
+
+
+
+userInfoDisplay:
+The info of other users will be displayed after clicking the names of the users on the left of groupPage. The page is similar to the profile page, without the button to "update information", since you cannot update other user’s information. This functionality is also applied by clicking on other user’s profile image on Friends page, which means when you click their images in Friends page, their user info will be displayed.
+
+
+Friends:
+The Friends page can be accessed by clicking "Friends" button on top of the navigation bar for a logged in user. In the page, you can chat with users by clicking their names on the left, typing message in the text area and sending the message. Also, after you clicking their names, webpage will display your history chat messages with the user you clicked in the middle. You can search other users (if currently not friends) by typing in their full name(first name + space + last name, the 
+name is case-sensitive), and add them as your friend (click the green "+ Add" buttons). You can also delete your friends by click the red " - " buttons in the friend list on the left.
+
+
+
+
+
+
+
+
+===================================================
+
+
+
+
+
+
+
+
+
+
+Administrator Instruction:
+
+
+
+
+This is the username and password you should use:
+================================================
+User log in:
+Username:admin
+password:admin
+
+
+
+
+admin:
+After log in as Admin, you are taken to the admin page, which can keep track of all the users, groups, and posts. You can 
+search or remove the groups, posts, and users. As the Admin, the user cannot have the same function as the normal users, and 
+therefore cannot access forum and profile page. The admin can only log off the website.
+
+
+        Something you will notice: The searching in admin page is case-sensitive unlike the one in forum page in order to 
+                                   increase accuracy.
+                                   To display all content in the table, empty the text field and click "Search" button again.
+
+
+
+
+
+
+==================== Overview of routes ==============================
+1. GET
+        GET / 
+        This server call sends back the homepage.html webpage
+
+
+        GET /curUser
+        This server call gets current user based on cookie and sends it back to client
+
+
+        GET /aboutUs/webpage
+        This server call sends back the aboutUs.html webpage
+
+
+        GET /admin/webpage
+        This server call will be called after administrator logs in and it will send back the admin.html webpage
+
+
+        GET /contactUs/webpage
+        This server call will sends back the contactUs.html webpage
+
+
+        GET /forum/webpage
+        This server call will sends back the forum.html webpage if the user has logged in, and sends back forumNotLoggedIn.html if not. If a user is not logged in, then he is able to see all posts but will be asked to log in if he wants add new post or reply.
+
+
+GET /friendList/webpage
+This server call sends back the friendList.html webpage.
+
+
+GET /friendList/userinfo
+This server call sends the current session user object.
+
+
+GET /friendList/userinfo/:id
+This server call finds user by id and sends the user object back.
+
+
+GET /friendList/userinfo/:username
+This server call finds user by username and sends the user object back.
+
+
+GET /friendList/friendChat/:friendId
+This server call sends the FriendChat object for current session user and friend with friendId back to client.
+
+
+GET /userInfoDisplay/webpage
+This server call sends back the userInfoDisplay.html webpage.
+
+
+GET /userInfoDisplay/getUserDisplayed
+This server call sends back the user object whose information is wanted to be displayed.
+
+
+GET /groupPage/webpage
+This server call sends back the groupPage.html webpage. groupPage shows one group that the user is currently looking at.
+
+
+GET /studyGroup/webpage
+This server call sends back studyGroup.html webpage. studyGroup shows all available groups.
+
+
+GET /groups/group
+This server call sends back group details that the user is currently looking at.
+
+
+GET /groups
+This server call sends back all groups available.
+
+
+GET /login/webpage
+This server call sends back logIn.html webpage
+
+
+GET /users/logoff
+This server call let current user log off and redirect to login webpage.
+
+
+GET /forum/allPost
+This server call sends back all posts in database to forum page. 
+
+
+GET /forum/allUser
+This server call sends back all users in database to forum page.
+
+
+GET /signup/webpage
+This server call sends back signUp.html webpage.
+
+
+GET /profile/webpage
+This server call sends back the profile.html webpage.
+
+
+GET /profile/userinfo
+This server call sends back current session user's user object back with all details.
+
+
+GET /admin/allPost
+This server call sends back all posts in database to admin.
+
+
+GET /admin/allUser
+This server call sends back all users in database to admin.
+
+
+GET /admin/allGroup
+This server call sends back all groups in database to admin.
+
+
+GET /avatar/webpage
+This server call sends back avatar.html webpage
+
+
+1. POST
+POST /friendList/friends
+This server call finds users whose ids are in the id array in the request body, then sends an array of user object back.
+
+
+POST /friendList/sendMessage/
+This server call add the sent message in the history attribute of the FriendChat object for current session user and the friend he is chatting to.
+
+
+POST /userInfoDisplay/changeUserDisplayedId
+This server calls updates the id of user who is clicked to be displayed information.
+
+
+POST /groups/members
+This server call receives a group id and sends back all members in this group
+
+
+POST /groups/group
+This server call receives a group id and save it into cookie as current group the user is looking at
+
+
+POST /groups
+This server call receives a series of information, form a new group based on them. save it into database and sends it back.
+
+
+POST /groups/update
+This server call receives updated group information and update database based on it.
+
+
+POST /users/login
+This server call does user authentication and save it into cookie if log in successfully
+
+
+POST /users/signup
+This server call  receives new user information,build a new user, save it into database, log in automatically and 
+
+
+1. PATCH
+PATCH /friendList/makeFriend/:newFriendId
+This server call adds current session user's id to the new friend's friendList attribute and adds new friend's id to current session user's friendList attribute. Then initializes a FriendChat object for them.
+
+
+PATCH /friendList/deleteFriend/:oldFriendId
+This server call removes old friend's id from current session user's friendList attribute and removes current session user's id from old friend's friendList attribute. Then removes their FriendChat object from database.
+
+
+PATCH /profile/update
+This server call updates current session user's information (attributes).
+
+
+     4. DELETE
+        DELETE /admin/deleteUser/:id
+        This server call allows admin to delete user from database based on the given user id.
+        
+DELETE /admin/deleteStudyGroup/:id
+This server call allows admin to delete group from database based on the given group id.
+DELETE /admin/deletePost/:id
+This server call allows admin to delete post from database based on the given post id.

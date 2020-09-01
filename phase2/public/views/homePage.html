@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CourseMate</title>
+    <link rel="stylesheet" type="text/css" href="/css/homePage.css">
+</head>
+<body>
+    <div id="navBar">
+        <ul>
+            <li class="floatLeft homePageNav">
+            <a class="navBarButton" href="/">Homepage</a>
+            </li>
+            <li class="floatLeft">
+            <a class="navBarButton" href="/forum/webpage">Forum</a>
+            </li>
+            <li class="floatLeft">
+            <a class="navBarButton" href="/aboutUs/webpage">About Us</a>
+            </li>
+            <li class="floatLeft">
+            <a class="navBarButton"  href="/contactUs/webpage">Contact Us</a>
+            </li>
+            <li class="floatRight">
+            <a class="navBarButton" id="logIn" href="/login/webpage">Log in</a>
+            <div class = "dropDown" id="dropDown"> <div id="/logOff">Log Off</div> </div>
+            </li>
+            <li class="floatRight">
+            <a class="navBarButton" id="signUp" href="/signUp/webpage">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+    <div id = "content">
+    <p class="centralBanner">Hello, CourseMate</p>
+    <form>
+        <input class="centralButton" type="button" value="Enter the forum" onclick="window.location.href='/forum/webpage'" />
+    </form>
+    <p class="centralText">Don't have an account? <a href="/signUp/webpage">Sign up</a>  here.</p>
+    <p class="centralText">Already registered? <a href="/login/webpage">Log in</a> here.</p>
+    </div>
+    <script type="text/javascript" src="/js/homePage.js"></script>
+
+    <footer class="footer">
+    <p>Designed and created by Team14 :)</p>
+    </footer>
+    </div>
+</body>
+</html>

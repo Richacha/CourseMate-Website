@@ -1,0 +1,176 @@
+body {
+	background-image: url("/image/background.jpg");
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+	margin: 0;
+}
+
+#navBar {
+	width: 100%;
+	background-color: black;
+  font-family: Verdana;
+  font-weight: bold;
+}
+
+#navBar ul {
+	padding: 20px;
+}
+
+#navBar ul li {
+	list-style: none;
+	display: inline;
+}
+
+.navBarButton {
+	text-decoration: none;
+	padding: 20px;
+  margin: 30px;
+	color: white;
+}
+
+.navBarButton:hover  {
+	color: orange;
+	text-decoration: none;
+}
+
+.floatRight {
+	float: right;
+}
+
+#profilePicContainer {
+	float: left;
+	clear: left;
+	width: 50%;
+	margin-bottom: 10%;
+}
+
+#myProfile {
+	width: 350px;
+	margin-left: 25%;
+	margin-top: 12%;
+	font-family: fantasy;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#profilePic {
+	width: 350px;
+	height: 350px;
+	border-radius: 15%;
+	border: solid orange;
+	margin-top: 10%;
+	margin-left: 25%;
+}
+
+#infoFormContainer {
+	float: right;
+	clear: right;
+	width: 50%;
+}
+
+#infoForm {
+	margin-top: 12%;
+	background-color: #F0EAD6;
+	margin-right: 10%;
+	padding: 3%;
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px grey;
+}
+
+.formRow {
+	margin-bottom: 2%;
+}
+
+.formLabel {
+	font-family: serif;;
+	font-size: 25px;
+	margin-right: 5%;
+}
+
+.formInput {
+	float: right;
+	width: 65%;
+	height: 40px;
+	margin-right: 3%;
+	border-radius: 8px;
+}
+
+#descriptionContainer {
+	float: left;
+	clear: left;
+	width: 100%;
+}
+
+#descriptionForm {
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	width: 70%;
+}
+
+.descriptionLabel {
+	width: 50%;
+	font-family: serif;;
+	font-size: 25px;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.descriptionInput {
+	width: 100%;
+	height: 200px;
+	border-radius: 8px;
+}
+
+.spanText {
+	float: right;
+	margin-right: 30%;
+	width: 30%;
+	font-size: 18px;
+	text-align: center;
+}
+
+#studyGroupList, #courseList {
+		width: 100%;
+    border-collapse: collapse;
+}
+
+#courseList th, td {
+    padding: 1%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+#studyGroupList th, td {
+    padding: 1%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+.descriptionText {
+	font-family: monospace;
+	font-size: 20px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px grey;
+}
+
+.button {
+	margin-left: 50%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	transform: translate(-50%, 0);
+	border-radius: 15px;
+	border: 2px solid orange;
+}
+
+#fileInput {
+	margin-left: 30%;
+	margin-top: 5%;
+}
+
+a {
+  cursor: pointer;
+  color: "blue";
+}

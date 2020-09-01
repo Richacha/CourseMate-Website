@@ -1,0 +1,152 @@
+# team14 phase1.txt
+
+After our first meeting with TA, we have agreed to remove some unnecessary features from our proposal. I also double checked
+with Professor Mark that we are allowed to revise the proposal during phase 1.
+As the result, the following information may differ a little from our proposal. Please regard phase1.txt as the standard our 
+group is following. Thank you.
+
+Please use the username and password we provided below to test our front end part.
+================================================
+User Log In credential:
+username:123
+password:123
+
+------------------------------------------------
+
+Admin Log In credential:
+username:admin
+password:admin
+================================================
+
+
+When you are not logged in:
+
+You are allowed to visit following page: homePage, forum(but you are not allowed to post or reply), aboutUs and contactUs.
+
+You may also go to signUp and logIn page.
+
+
+
+
+================================================
+
+User Instruction:
+
+This is the username and password you should use:
+================================================
+User log in:
+username:123
+password:123  (For phase1, there is no need to apply hash function)
+
+
+index(homePage):
+This is the first page the user will see when entering our websites. On top of our homePage, are the entries for several other
+pages of our website. The user can click on Forum on top of the page, or click "Enter the forum" orange button to enter forum.
+The user can click on "About Us" to obtain more information about this website. The user can click on "Contact Us" to obtain
+information about the team member, and how they can contact each of us. User can click on "Sign up" to sign up for an account,
+or "Log in" to log into the website.
+
+forumNotLoggedIn(the forum page display without log in):
+User can freely browse forum without logging in. By doing so, the user is restricted from posting content and replying post.
+The "New Post" button will automatically take user to the Log In page, and the "Reply" button will also automatically take the
+user to the Log In page as well. User can click on the Posts to see the contents of the post, including its title, content,
+and replies. User can use the search bar below "New Post" button to search for posts.
+
+forum(the forum page display with user logged in):
+User can now post new posts, and reply in the posts of other users. Besides these two functions, the function of the forum is
+the same as alternate version of the forum(The forum page not logged in). Nevigation bar is also changed. User will have 
+access to profile page, friends list page and study group list page. Users are not allowed to post with an empty title. 
+The empty posts hard-coded in html is to demonstrate the scrolling effect.
+
+profile:
+A logged in user can click the profile button on top of the navigation bar to enter his profile page. The page will display
+his personal info, including his courses, honour, hobbies. The user can update his information by clicking the
+"Update Information" button at the very end of the page, and by doing so, they can freely edit the fields described above,
+and click confirm to save the changes. You can also click on your study group list to go to the study groups that you are in.
+
+        Something you will notice: You are allowed to update the profile picture by clicking the "browse" button and then
+                                   "Update Information" button. However, the new profile picture should be stored in the 
+                                   same directory called "profile".
+
+studyGroup:
+By clicking the studyGroup on top of the page in the navigation bar after log in, you will be taken to a page that contains
+all the existing study groups. You can search for the studyGroups by course code, or name. You can also create your own group
+by using the input to type in the name, and the course number of the group. After clicking on the group name, the user will be
+navigated to the groupPage. We have provided a hard-coded example called "Happy 309 friends"
+
+        Something you will notice: The searching in studyGroup is case-sensitive unlike the one in forum page. Searching for a
+                                   study group requires more accuracy.
+                                   To display all content in the table, empty the text field and click "Search" button again.
+                                    
+
+groupPage:
+You can enter the groupPage by clicking on the groups displayed in the study group list inside your profile page. We
+implemented one groupPage. In the studyGroup page, you can click on the names of the members to go to userInfoDisplay page,
+and click on Announcement to display the announcements broadcasted by each group member. 
+
+        Something you will notice: In phase 1, we redirect the profile pages for all members to the same profile page.
+                                   This is not a bug. This design is purely for demo purpose since accessing different
+                                   profile pages based on users will require server calls.
+                                   
+You can add new Announcement to the list by clicking "+new". By clicking "Group Chat" on the left, we can enter chat interface 
+of the group, and you can send information using send button. You can join the group by clicking the "Join Group" button. 
+Similarly, you can leave the group by clicking the "Leave Group" button on the left.
+
+userInfoDisplay:
+The info of other users will be displayed after clicking the name of the user on the left of groupPage. The page is similar to
+the profile page, without the button to "update information".
+
+friendList:
+The friendList page can be accessed by clicking "Friends" button on top of the navigation bar for a logged in user. In the
+page, you can chat with users by clicking their names on the left, and display your chat messages with each user in the
+middle. You can search other users (if currently not friends) by typing in their full name(firstname + space + lastname, the 
+name is case-sensitive), and add them as your friend (click the green "+ Add" buttons). You can also delete your friends
+by click the red " - " buttons in the friend list on the left.
+        The list of hard-coded users (if currently not friends) you can use to test the "adding friends" function:    
+        {id: "0", firstName: "Haolin", lastName: "Zhang", profileImage: "0.jpg"},
+        {id: "1", firstName: "a", lastName: "Zhang", profileImage: "1.jpg"},
+        {id: "2", firstName: "b", lastName: "Zhang", profileImage: "2.jpg"},
+        {id: "3", firstName: "c", lastName: "Zhang", profileImage: "3.jpg"},
+        {id: "4", firstName: "d", lastName: "Zhang", profileImage: "4.jpeg"},
+        {id: "5", firstName: "e", lastName: "Zhang", profileImage: "5.jpeg"},
+        {id: "6", firstName: "f", lastName: "Zhang", profileImage: "6.jpeg"},
+        {id: "7", firstName: "g", lastName: "Zhang", profileImage: "7.jpeg"},
+        {id: "8", firstName: "g", lastName: "Zhang", profileImage: "8.jpeg"},
+        {id: "9", firstName: "h", lastName: "Zhang", profileImage: "9.jpeg"},
+        {id: "10", firstName: "h", lastName: "Zhang", profileImage: "10.jpeg"},
+        {id: "11", firstName: "i", lastName: "Zhang", profileImage: "11.jpeg"},
+        {id: "12", firstName: "j", lastName: "Zhang", profileImage: "12.jpeg"},
+        {id: "13", firstName: "k", lastName: "Zhang", profileImage: "13.jpeg"},
+        {id: "14", firstName: "k", lastName: "Zhang", profileImage: "14.jpeg"},
+        {id: "15", firstName: "Haolin", lastName: "Zhang", profileImage: "15.jpg"},
+        {id: "16", firstName: "a", lastName: "Zhang", profileImage: "16.jpg"}
+        
+        An interesting case to try: Search "k Zhang" (lower case k, upper case Z)
+        There are two users with the same name, see what will happen :)
+
+
+
+===================================================
+
+
+
+
+
+Administrator Instruction:
+
+
+This is the username and password you should use:
+================================================
+User log in:
+Username:admin
+password:admin
+
+
+admin:
+After log in as Admin, you are taken to the admin page, which can keep track of all the users, groups, and posts. You can 
+search or remove the groups, posts, and users. As the Admin, the user cannot have the same function as the normal users, and 
+therefore cannot access forum and profile page. The admin can only log off the website.
+
+        Something you will notice: The searching in admin page is case-sensitive unlike the one in forum page in order to 
+                                   increase accuracy.
+                                   To display all content in the table, empty the text field and click "Search" button again.

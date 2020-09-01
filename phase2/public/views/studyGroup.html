@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CourseMate</title>
+    <link rel="stylesheet" type="text/css" href="/css/studyGroup.css">
+</head>
+<body>
+  <div id="navBar">
+    <ul>
+      <li>
+        <a class="navBarButton" href="/forum/webpage">Forum</a>
+      </li>
+      <li>
+        <a class="navBarButton" href="/profile/webpage">Profile</a>
+      </li>
+      <li>
+        <a class="navBarButton" href="/friendList/webpage">Friends</a>
+      </li>
+      <li>
+        <a class="navBarButton" href="/studyGroup/webpage">Study Group</a>
+      </li>
+      <li class="floatRight">
+        <a class="navBarButton" href="/users/logoff">Log Off</a>
+      </li>
+    </ul>
+  </div>
+
+
+    <div id = "content">
+    <form id = "search">
+    <span class = "searchElement">
+    Course number: <input class="textInput" type="text" name="courseNumber" placeholder="course number" id="courseNum"/>
+    </span>
+    <span class="searchElement">
+    Group name: <input class="textInput" type="text" name="groupName" placeholder="group name" id="groupName"/>
+    </span>
+    <button id="searchButton" class="button"/>Search</button>
+    </form>
+    <br>
+    <br>
+    <form id = "newGroup">
+    <span class = "searchElement">
+    Course number: <input class="textInput" type="text" name="courseNumber" placeholder="course number" id="newCourseNum"/>
+    </span>
+    <span class="searchElement">
+    Group name: <input class="textInput" type="text" name="groupName" placeholder="group name" id="newGroupName"/>
+    </span>
+    <button id="newGroupButton" class="button" OnClick=" location.href='/studyGroup/webpage' "/>Create</button>
+    </form>
+
+    <div id = "groupTable">
+        <div id="groupMenu"></div>
+    </div>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="/js/studyGroup.js"></script>
+</html>

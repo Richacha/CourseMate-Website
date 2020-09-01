@@ -1,0 +1,373 @@
+html {
+  height: 100%;
+}
+
+body {
+    background-color: #64C5EF;
+    margin: 0;
+    height: 100%;
+}
+
+.centralBanner{
+    color: white;
+    font-size: 100px;
+    font-style: oblique;
+    text-align: center;
+    text-shadow: 3px 2px grey;
+    margin-top: 3.3em;
+}
+
+.centralButton{
+    background-color: orange;
+    font-style: oblique;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    font-size: 50px;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 12px 36px;
+
+}
+
+.centralText{
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: grey;
+    color: white;
+    position: fixed;
+    text-align: center;
+    bottom:0%;
+    left:0%;
+    width: 100%;
+    height:4.5%;
+}
+
+#navBar {
+  width: 100%;
+  background-color: black;
+  font-family: Verdana;
+  font-weight: bold;
+  height: 6%;
+}
+
+#navBar ul {
+    position: relative;
+    margin-left: 0%;
+    padding: 25px;
+    margin-top: 0px;
+}
+
+#navBar ul li {
+  list-style: none;
+  display: inline;
+}
+
+.navBarButton {
+  text-decoration: none;
+  padding: 20px;
+  margin: 30px;
+  color: white;
+}
+
+.navBarButton:hover  {
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.floatLeft  {
+  float: left;
+}
+
+.floatRight  {
+  float: right;
+}
+
+.container {
+  position: absolute;
+  padding: 20px;
+  width: 20%;
+  left: 40%;
+  right: 40%;
+  height: 50%;
+  top: 30%;
+  bottom: 47%;
+  background-color: #13232f;
+  box-shadow: 0 4px 10px 4px rgba(#13232f, 0.3);
+  border-radius: 2%;
+}
+.containerElement {
+  font-family: Open Sans;
+  width: 100%;
+  color: #ccc;
+  font-size: 25px;
+  margin: 5;
+}
+
+.button {
+  border-color: #3191ab;
+  background-color: #3191ab;
+  font-size: 22px;
+  color: #fff;
+  width: 50%;
+  height: 45%;
+  font-weight: bold;
+}
+
+.textInput{
+    padding: 6px 10px;
+    margin: 4px 0;
+    font-size: 20px;
+}
+
+
+.dropDown{
+  /* hide the menu */
+  display: none; 
+}
+
+.dropDownShown{
+  position: relative;
+  color: white;
+  padding: 10px 20px 10px 10px;
+  margin: 0px 30px 0px 0px;
+  background-color: black;
+  cursor: pointer;
+  width: 70px;
+  /* hide the menu */
+}
+
+.dropDownShown:hover{
+  color: orange;
+}
+
+#mainContent{
+  float: right;
+  background-image: url("/image/background.jpg");
+	background-size: cover;
+  margin-top: 0.5%;
+  width: 81.5%;
+  height: 65%;
+  border: none;
+  border-radius: 20px;
+  overflow: scroll;
+}
+
+#postsBar{
+  float: left;
+  background-color: #2c2d30; 
+  width: 18%;
+  height: 100%;
+  border: none;
+  overflow-y: scroll;
+}
+
+.post{
+  cursor: pointer;
+}
+
+#welcome {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  font-style: initial;
+  text-align: center;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+}
+
+.forumPost{
+  font-size: 18px;
+  background-color: #2c2d30;
+  color: white;
+  width: 100%;
+  height: 70px;
+  max-width: 100%;
+  padding-left: 2%;
+  border: 1px dotted white;
+  border-left-style: none;
+  border-right-style: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#displayPost {
+  padding-left: 3%;
+  color: black;
+  font-size: 30px;
+}
+
+#replyDiv{
+  float: bottom;
+}
+
+#newPost{
+  background-color:darkblue;
+  color: white;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  padding: 15px 15px;
+  font-size : 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10%;
+  text-align: center;
+  display: inline-block;
+}
+
+#newPost:hover{
+  color: orange;
+}
+
+.postTitle{
+  margin-left: 4%;
+  color:white;
+}
+
+#replyBlock{
+  float: right;
+  margin-top: 0.5%;
+  background-image: url("/image/background.jpg");
+	background-size: cover;
+  width: 81.5%;
+  height: 28%;
+  border: none;
+  border-radius: 25px;
+}
+
+.postRow {
+  margin-left: -1.5%;
+  width: 100%;
+  min-height: 220px;
+  border-bottom: 3px solid black;
+  clear: both;
+}
+
+.postImage {
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-top: 3%;
+  float: left;
+}
+
+.postAuthorContainer{
+  width: 100px;
+  height: 100px;
+  margin-left: 6%;
+  margin-top: 10px;
+  float: left;
+  clear: left;
+}
+.postMessageContainer {
+  width: 70%;
+  margin-top: -1%;
+  margin-left: 20%;
+}
+
+
+.postMessage {
+  background-image: url("/image/background.jpg");
+	background-size: cover;
+}
+
+
+#replyDiv{
+  margin-left: 6%;
+  margin-top: 1.5%;
+}
+
+.pendingPostTitle{
+  font-size: 40px;
+}
+
+.pendingPostContent{
+  font-size: 23px;
+}
+
+.readTerms{
+  text-align: center;
+  font-size: 35px;
+  color: red;
+  font-weight: bold;
+}
+textarea#newPostContent{
+  margin-left: 3%;
+  width: 90%;
+  height: 550px;
+}
+textarea#newPostTitle{
+  margin-left: 3%;
+  width: 90%;
+  height: 45px;
+}
+
+textarea#typeFieldReply{
+  margin-left: 1%;
+  width: 85%;
+  height: 200px;
+}
+
+.newPostPageText{
+  font-size: 20px;
+  margin-left: 2%;
+  margin-bottom: 0%;
+}
+
+button#submitPostButton{
+  margin-top: 1%;
+  margin-right: 5%;
+  float: right;
+  background-color: blue;
+  border-radius: 5px;
+  font-size: 22px;
+  color: #fff;
+  width: 5%;
+  height: 45%;
+  font-weight: bold;
+}
+
+button#submitResponseButton{
+  margin-top: 13%;
+  margin-right: 5%;
+  float: right;
+  background-color: blue;
+  border-radius: 5px;
+  font-size: 22px;
+  color: #fff;
+  width: 7%;
+  height: 45%;
+  font-weight: bold;
+}
+
+textarea{
+  font-size: 30px;
+  overflow: scroll;
+}
+
+#emptyPostTitleWarning{
+  float: left;
+  margin-left: 3%;
+  font-size: 20px;
+  color: red;
+}
+
+#searchPost{
+  font-size: 22px;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+.rules{
+  font-size: 30px;
+  margin-left: 3%;
+}
